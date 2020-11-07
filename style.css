@@ -29,7 +29,7 @@ html {
 .image-container {
   position: absolute;
   z-index: 99;
-  height: 50vh;
+  height: 70vh;
   width: auto;
   text-align: center;
   left: 0;
