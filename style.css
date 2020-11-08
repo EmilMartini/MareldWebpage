@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 .section {
@@ -13,6 +14,8 @@ html {
   position: absolute;
   top: 100vh;
   min-height: 100vh;
+  text-align: center;
+  width: 100%;
 }
 
 .video-container {
@@ -29,7 +32,7 @@ html {
 .image-container {
   position: absolute;
   z-index: 99;
-  height: 70vh;
+  height: 90%;
   width: auto;
   text-align: center;
   left: 0;
@@ -43,10 +46,55 @@ html {
   height: inherit;
 }
 
+.image-icon {
+  height: 30vh;
+  width: auto;
+  text-align: center;
+  top: 0;
+}
+
+.image-icon img {
+  width: inherit;
+  height: inherit;
+}
+
+#info {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+#info h1 {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.links div {
+  flex-grow: 1;
+  width: 33%;
+  height: 100px;
+}
+
+.links img {
+  width: 40%;
+}
+
 .scroll a {
   position: absolute;
+  text-align: center;
   bottom: 20px;
-  left: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
@@ -115,5 +163,16 @@ html {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .image-container {
+    width: 100%;
+  }
+
+  #info h1 {
+    text-align: center;
+    padding-bottom: 1rem;
   }
 }
