@@ -29,19 +29,14 @@ html {
   top: 200vh;
 }
 
-#tourdates {
+#gallery {
   position: absolute;
   top: 300vh;
 }
 
-#gallery {
-  position: absolute;
-  top: 400vh;
-}
-
 #contact {
   position: absolute;
-  top: 500vh;
+  top: 400vh;
 }
 
 .video-container {
@@ -184,13 +179,12 @@ html {
 
 /* Style the links inside the navigation bar */
 .nav a {
-  float: left;
-  display: block;
+  display: inline-block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -246,25 +240,14 @@ html {
     text-align: center;
     padding-bottom: 1rem;
   }
-  
-  .nav a {
-    display: none;
-  }
-  .nav a.icon {
-    float: right;
-    display: block;
-  }
+
   .nav.responsive {
     position: relative;
+    margin-bottom: -5%;
   }
-  .nav.responsive a.icon {
-    right: 0;
-    top: 0;
-    display: block;
-  }
+
   .nav.responsive a {
     float: none;
-    display: block;
-    text-align: left;
+    display: inline-block;
   }
 }
