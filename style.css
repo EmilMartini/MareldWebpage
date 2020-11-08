@@ -11,11 +11,37 @@ html {
 }
 
 .fullscreen {
-  position: absolute;
-  top: 100vh;
   min-height: 100vh;
   text-align: center;
   width: 100%;
+  border-bottom: 1px solid black;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#bio {
+  position: absolute;
+  top: 100vh;
+}
+
+#merch {
+  position: absolute;
+  top: 200vh;
+}
+
+#tourdates {
+  position: absolute;
+  top: 300vh;
+}
+
+#gallery {
+  position: absolute;
+  top: 400vh;
+}
+
+#contact {
+  position: absolute;
+  top: 500vh;
 }
 
 .video-container {
@@ -52,6 +78,7 @@ html {
   text-align: center;
   top: 0;
   margin-bottom: -5%;
+  z-index: -99;
 }
 
 .image-icon img {
@@ -147,6 +174,30 @@ html {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
+
+/* Add a black background color to the top navigation */
+.nav {
+  overflow: hidden;
+  margin-top: -5%;
+  justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.nav .icon {
+  display: none;
+}
+
 @-webkit-keyframes sdb07 {
   0% {
     opacity: 0;
@@ -194,5 +245,26 @@ html {
   #info h1 {
     text-align: center;
     padding-bottom: 1rem;
+  }
+  
+  .nav a {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive a.icon {
+    right: 0;
+    top: 0;
+    display: block;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
