@@ -47,10 +47,11 @@ html {
 }
 
 .image-icon {
-  height: 30vh;
+  height: 40vh;
   width: auto;
   text-align: center;
   top: 0;
+  margin-bottom: -5%;
 }
 
 .image-icon img {
@@ -59,14 +60,15 @@ html {
 }
 
 #info {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
 #info h1 {
-  text-align: left;
   padding-bottom: 1rem;
 }
 
@@ -75,8 +77,8 @@ html {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .links div {
@@ -86,7 +88,7 @@ html {
 }
 
 .links img {
-  width: 50%;
+  width: 35%;
 }
 
 .scroll a {
@@ -177,6 +179,16 @@ html {
 
   .image-container img {
     filter: invert(1);
+  }
+
+  #info {
+    width: 80%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+  }
+
+  .image-icon {
+    display: none;
   }
 
   #info h1 {
