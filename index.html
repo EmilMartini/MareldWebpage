@@ -7,12 +7,6 @@
     <title>MARELD | Official Site</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
@@ -20,75 +14,25 @@
   </head>
   <body>
     <div class="openingSection">
-      <div class="image-container">
-        <img src="Images/MARELD-Logo.png" alt="" />
+      <div class="logo">
+        <img src="Images/MARELD-Logo.png" alt="">
       </div>
-      <div class="video-container">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/eH6tqXQNWUA?&autoplay=1&mute=1&loop=1&playsinline=1"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        ></iframe>
+      <div class="container">
+        <div id="countdown">
+          <ul>
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+        <h1 id="headline">Januari 8th</h1>
+        <div class="message">
+          <div id="content">
+          </div>
+        </div>
       </div>
-      <section id="scrollSection" class="scroll">
-        <a href="#bio"><span></span><span></span><span></span>Read more</a>
-      </section>
     </div>
-    <section class="fullscreen" id="bio">
-      <div class="nav responsive" id="myNav">
-        <a href="#merch">Merch</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="image-icon">
-        <img src="Images/MARELD-Symbol.png" alt="" srcset="" />
-      </div>
-      <div id="info">
-        <div>
-          <h1>MARELD</h1>
-          <p>
-            Originating from the coastal town of Varberg on the Swedish West Coast, 
-            the progressive metal outfit MARELD started taking form in early 2019 and has been in the works ever since.
-            With each member having a different musical background, MARELD comes together with one common goal; to create fun music.
-          </p>
-          <p>
-            Technical guitar riffs, heavy breakdowns, groovy bass parts, classic rock vocals and brutal death metal screams all blend together in perfect harmony.
-            MARELD tries to embrace the DIY-mentality in as many ways as possible. Everything you hear is self produced. 
-          </p>
-        </div>
-      </div>
-      <div class="links">
-        <div id="link1">
-          <a href="https://www.instagram.com/" target="blank">
-            <img src="Images/instagram-logo-png-2451.png" alt="Instagram" />
-          </a>
-        </div>
-        <div id="link2">
-          <a href="https://www.spotify.com/se/" target="blank">
-            <img src="Images/spotify-logo-png-7069.png" alt="Spotify" />
-          </a>
-        </div>
-        <div id="link3">
-          <a href="https://www.facebook.com/" target="blank">
-            <img src="Images/logo-facebookpng-32213.png" alt="Facebook" />
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="fullscreen" id="merch">
-      <h1>MERCH</h1>
-      <h2>Coming soon.</h2>
-    </section>
-    <section class="fullscreen" id="gallery">
-      <h1>GALLERY</h1>
-      <h2>Coming soon.</h2>
-    </section>
-    <section class="fullscreen" id="contact">
-      <h1>CONTACT</h1>
-      <h2>Coming soon.</h2>
-    </section>
   </body>
   <footer>
     <script src="script.js"></script>
