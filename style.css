@@ -30,7 +30,8 @@ body {
   color: rgb(255, 255, 255);
   margin: 0 auto;
   text-align: center;
-  align-items: baseline;
+  align-items: center;
+  margin-top: -5%;
 }
 
 h1 {
@@ -70,8 +71,9 @@ li span {
   height: 50vh;
   width: auto;
   text-align: center;
-  margin-top: -30%;
-  margin-bottom: -20%;
+  justify-content: center;
+  margin-top: -10%;
+  display: inline-block;
 }
 
 .logo img{
@@ -80,9 +82,46 @@ li span {
   filter: invert(1)
 }
 
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+.links div {
+  flex-grow: 1;
+  width: 20%;
+  height: 70px;
+}
+
+.links img {
+  width: 35%;
+}
+
+.openingSection {
+  text-align: center;
+}
+
+
 @media all and (max-width: 768px) {
+  .links {
+    margin-top: 5%;
+  }
+  
+  .links img {
+    width: 80%;
+  }
+  
+  .container {
+    margin-top: -20%;
+  }
+
   .logo {
-    margin-top: -90%;
+    margin-top: -60%;
   }
   
   h1 {
